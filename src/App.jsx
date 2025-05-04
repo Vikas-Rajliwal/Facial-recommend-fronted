@@ -18,7 +18,7 @@ function App() {
       formData.append("file", blob, "photo.jpg");
 
       const response = await axios.post(
-        "http://localhost:8000/predict/",
+        "https://facial-project-backend.onrender.com/predict/",
         formData
       );
       setResult(response.data);
